@@ -19,6 +19,7 @@ gem 'omniauth-github'
 gem 'jquery-rails'
 gem 'react_on_rails', '8.0.0'
 gem 'webpacker_lite'
+gem 'figaro'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

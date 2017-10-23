@@ -1,0 +1,9 @@
+<h2><%= @chatroom.name %></h2>
+
+<div id="messages">
+  <% @chatroom.messages.each do |message| %>
+    <%= render partial: 'messages/message', locals: {message: message} %>
+  <% end %>
+</div>
+
+<%= render partial: 'messages/new', locals: {chatroom: @chatroom} %>
